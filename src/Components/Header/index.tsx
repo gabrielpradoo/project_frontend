@@ -9,21 +9,21 @@ const Header: React.FC = () => {
     <Container>
       <ul>
         <li>
-          <Link to="#">Sobre Nós</Link>
+          <Link to="/sobre">Sobre Nós</Link>
         </li>
         <li>
-          <Link to="#">A Experiencia</Link>
+          <Link to="/experiencia">A Experiencia</Link>
         </li>
         <li>
-          <Link to="#">
+          <Link to="/">
             <img src={logoImg} alt="" />
           </Link>
         </li>
         <li>
-          <Link to="#">Nossos Barcos</Link>
+          <Link to="/embarcacoes">Nossos Barcos</Link>
         </li>
         <li>
-          <Link to="#">Reserve Já</Link>
+          <Link to="/reservas">Reserve Já</Link>
         </li>
       </ul>
     </Container>

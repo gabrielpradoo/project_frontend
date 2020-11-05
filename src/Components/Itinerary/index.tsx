@@ -10,7 +10,8 @@ const Itinerary: React.FC = () => {
         <h2>Pensansando em você</h2>
         <p>
           Para atender você da melhor maneira possível, nós idealizamos dois
-          caminhos, o <Link to="/">Terra</Link> e o <Link to="/">Agua</Link>.
+          caminhos, o <Link to="/terra">Terra</Link> e o{' '}
+          <Link to="/agua">Agua</Link>.
         </p>
       </div>
 
@@ -18,7 +19,7 @@ const Itinerary: React.FC = () => {
         <div className="itinerary-earth">
           <div className="content">
             <span>Roteiro Terra</span>
-            <Link className="btn" to="/">
+            <Link className="btn" to="/terra">
               RESERVE JÁ
             </Link>
           </div>
@@ -26,7 +27,7 @@ const Itinerary: React.FC = () => {
         <div className="itinerary-water">
           <div className="content">
             <span>Roteiro Água</span>
-            <Link className="btn" to="/">
+            <Link className="btn" to="/agua">
               Conheça
             </Link>
           </div>
