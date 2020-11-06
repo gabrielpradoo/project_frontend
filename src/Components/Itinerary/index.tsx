@@ -7,7 +7,7 @@ const Itinerary: React.FC = () => {
   return (
     <Container>
       <div className="itinerary-text">
-        <h2>Pensansando em você</h2>
+        <h2>Pensando em você</h2>
         <p>
           Para atender você da melhor maneira possível, nós idealizamos dois
           caminhos, o <Link to="/terra">Terra</Link> e o{' '}

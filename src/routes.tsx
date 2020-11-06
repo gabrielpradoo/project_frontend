@@ -18,7 +18,7 @@ const Routes: React.FC = () => {
         <Route path="/embarcacoes" component={Vessels} />
         <Route path="/reservas" component={Booking} />
         <Route path="/agua" component={Water} />
-        <Route path="/terra" component={Earth} />
+        <Route path="/terra" component={Earth} exact />
       </Switch>
     </BrowserRouter>
   );
