@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import riverImg from '../../assets/por_do_sol.webp';
+import roteiro_compImg from '../../assets/roteiro_completo.webp';
 
 export const Container = styled.div`
   border-top: 2px solid var(--color-yellow-s);
@@ -10,37 +12,48 @@ export const Container = styled.div`
 
     > .infos-text {
       padding-left: 8px;
+      width: 50%;
+      height: 600px;
 
-      height: 90%;
+      text-align: center;
+      padding: auto;
 
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      /*justify-content: space-around;*/
       align-items: center;
 
-      > h2 {
-        color: var(--color-yellow-s);
-        font-size: 2.5rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        text-align: center;
-      }
+      .infos-text-content {
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      > p {
-        color: var(--color-green-s);
-        font-size: 1.3rem;
-        font-weight: 400;
-        width: 60%;
-        text-align: center;
+        > h2 {
+          color: var(--color-yellow-s);
+          font-size: 2.5rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          text-align: center;
+        }
 
-        margin-bottom: 12px;
+        > p {
+          color: var(--color-green-s);
+          font-size: 1.3rem;
+          font-weight: 400;
+          width: 60%;
+          text-align: center;
+
+          margin-bottom: 12px;
+        }
       }
     }
 
-    > img {
-      max-width: 1400px;
-      width: 100%;
-      height: auto;
+    > .infos-img {
+      background: url(${riverImg}) no-repeat;
+      background-size: cover;
+      width: 50%;
+      height: 600px;
     }
   }
 
@@ -51,44 +64,52 @@ export const Container = styled.div`
 
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     > .infos-text {
       padding-left: 8px;
 
       width: 50%;
-
-      height: 90%;
+      height: 600px;
 
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      /*justify-content: space-around;*/
       align-items: center;
 
-      > h2 {
-        color: var(--color-yellow-s);
-        font-size: 2.5rem;
-        font-weight: 300;
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 8px;
-      }
+      .infos-text-content {
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-      > p {
-        color: var(--color-green-s);
-        font-size: 1.3rem;
-        font-weight: 400;
-        width: 60%;
-        text-align: center;
+        > h2 {
+          color: var(--color-yellow-s);
+          font-size: 2.5rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          text-align: center;
+          margin-bottom: 8px;
+        }
 
-        margin-bottom: 12px;
+        > p {
+          color: var(--color-green-s);
+          font-size: 1.3rem;
+          font-weight: 400;
+          width: 60%;
+          text-align: center;
+
+          margin-bottom: 12px;
+        }
       }
     }
 
-    > img {
-      /* max-width: 1400px; */
-      width: 49%;
+    > .infos-img-1 {
+      background: url(${roteiro_compImg}) no-repeat;
+      background-size: cover;
+      width: 50%;
+      height: 600px;
     }
   }
 `;
